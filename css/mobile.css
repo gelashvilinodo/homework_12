@@ -1,0 +1,28 @@
+/* 361px */
+
+@media (max-width: 361px) {
+
+    /* header  */
+
+    header {
+        padding-inline: 8px;
+    }
+
+    .mobile_button {
+        display: block;
+        background-color: transparent;
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgba(243, 10, 234, 1);
+        border-radius: 8px;
+    }
+
+    .log_in {
+        display: none;
+    }
+
+    .cart_button {
+        width: 32px;
+        height: 32px;
+    }
+}

@@ -22,7 +22,10 @@ header {
     width: 560px;
     border-radius: 8px;
     box-shadow: 0px -2px 5px #F1ACEE;
+}
 
+.tablet_button {
+    display: none;
 }
 
 .header_input {
@@ -40,10 +43,6 @@ header {
 }
 
 .header_input::placeholder {
-    font-family: var(--inter);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
     color: rgba(158, 141, 158, 0.71);
 }
 
@@ -53,6 +52,10 @@ header {
     border: none;
     border-radius: 0px 8px 8px 0px;
     background-color: rgba(176, 82, 181, 1);
+}
+
+.mobile_button {
+    display: none;
 }
 
 .user_div {
@@ -78,4 +81,187 @@ header {
     border: none;
     border-radius: 8px;
     background-color: #F30AEA;
+}
+
+/* section  */
+
+section {
+    background-image: url("../images/cover\ image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 898px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container {
+    background-color: rgba(28, 19, 37, 0.8);
+    border: 1px solid rgba(176, 82, 181, 0.79);
+    border-radius: 20px;
+    padding: 48px 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+h2 {
+    font-family: var(--poppins);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 2px 4px 4px rgba(249, 12, 239, 0.71);
+    text-align: center;
+}
+
+.user_info {
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 24px;
+}
+
+.nameemail {
+    width: 220px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid rgba(176, 82, 181, 1);
+    border-radius: 8px;
+    padding: 11px 22px;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.nameemail::placeholder {
+    color: rgba(158, 141, 158, 0.71);
+}
+
+p {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 16px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 8px;
+}
+
+.individual_radio {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+input[type=radio] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(243, 10, 234, 0.71);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=radio]:checked::after {
+    content: url("../images/Frame\ 63.svg");
+}
+
+.radio_labels {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(176, 82, 181, 1);
+}
+
+.textareadiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-block: 24px;
+}
+
+.textarea_label {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+}
+
+textarea {
+    width: 464px;
+    height: 112px;
+    border-radius: 8px;
+    border: 1px solid rgba(176, 82, 181, 1);
+    background-color: transparent;
+    padding: 11px 22px;
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: (158, 141, 158, 0.71)
+}
+
+.checkboxdiv {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(243, 10, 234, 1);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox]:checked:before {
+    content: url("../images/iconamoon_arrow-up-2-bold.svg");
+    width: 16px;
+    height: 16px;
+}
+
+.check_label {
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sub_button {
+    width: 464px;
+    height: 64px;
+    margin-top: 40px;
+    border: 1px solid rgba(176, 82, 181, 0.79);
+    border-radius: 16px;
+    background-color: rgba(243, 10, 234, 1);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
 }

@@ -1,0 +1,12 @@
+/* 1000px */
+
+@media (max-width: 1000px) {
+    .header_form {
+        width: 460px;
+    }
+
+    .contact_container {
+        padding-inline: 170px;
+    }
+
+}

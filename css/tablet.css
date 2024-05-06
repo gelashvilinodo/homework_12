@@ -1,0 +1,28 @@
+/* 835px */
+
+@media (max-width: 835px) {
+
+    /* header  */
+
+    header {
+        padding-inline: 40px;
+    }
+
+    .header_form {
+        display: none;
+    }
+
+    .button_image {
+        width: 23px;
+        height: 23px;
+    }
+
+    .tablet_button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 32px;
+        height: 32px;
+    }
+
+}

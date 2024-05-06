@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
     <link rel="stylesheet" href="css/tablet.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/stylesheet.css" />
@@ -19,12 +20,24 @@
           <img src="images/logo plant.svg" alt="" />
         </a>
         <form action="" class="header_form">
-          <input type="text" name="SEARCH" placeholder="What are you looking for?" value="" class="header_input"/>
+          <input
+            type="text"
+            name="SEARCH"
+            placeholder="What are you looking for?"
+            value=""
+            class="header_input"
+          />
           <button type="submit" class="header_button">
-            <img src="images/charm_search.svg" alt="">
+            <img src="images/charm_search.svg" alt="" />
           </button>
         </form>
+        <button class="tablet_button">
+          <img src="images/charm_search.svg" class="button_image" alt="" />
+        </button>
         <div class="user_div">
+          <button class="mobile_button">
+            <img src="images/gridicons_user.svg" alt="" />
+          </button>
           <a href="">
             <button class="log_in">LOG IN</button>
           </a>
@@ -35,7 +48,93 @@
           </a>
         </div>
       </header>
-      
+      <!-- section  -->
+      <section class="contact">
+        <div class="contact_container">
+          <h2>CONTACT US</h2>
+          <form action="">
+            <div class="user_info">
+              <input
+                type="text"
+                name="customer_name"
+                placeholder="Name"
+                class="nameemail"
+              />
+              <input
+                type="email"
+                name="customer_email"
+                placeholder="Email"
+                class="nameemail"
+              />
+            </div>
+            <p>I have a delivery question about my order</p>
+            <div class="radio">
+              <div class="individual_radio">
+                <input
+                  type="radio"
+                  id="radio1"
+                  name="delivery_question"
+                  value="I did not receive my order"
+                />
+                <label for="radio1" class="radio_labels"
+                  >I did not receive my order</label
+                >
+              </div>
+              <div class="individual_radio">
+                <input
+                  type="radio"
+                  id="radio2"
+                  name="delivery_question"
+                  value="My order is incorrect or arrived damaged"
+                />
+                <label for="radio2" class="radio_labels"
+                  >My order is incorrect or arrived damaged
+                </label>
+              </div>
+              <div class="individual_radio">
+                <input
+                  type="radio"
+                  id="radio3"
+                  name="delivery_question"
+                  value="Cancel my order"
+                />
+                <label for="radio3" class="radio_labels">Cancel my order</label>
+              </div>
+              <div class="individual_radio">
+                <input
+                  type="radio"
+                  id="radio4"
+                  name="delivery_question"
+                  value="Change my shipping address"
+                />
+                <label for="radio4" class="radio_labels">
+                  Change my shipping address
+                </label>
+              </div>
+            </div>
+            <div class="textareadiv">
+              <label for="textmessage" class="textarea_label"
+                >Please provide more details below.
+              </label>
+              <textarea
+                name="Message"
+                id="textmessage"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              >
+              </textarea>
+            </div>
+            <div class="checkboxdiv">
+              <input type="checkbox" id="newsletter" name="receive" />
+              <label for="newsletter" class="check_label">
+                I want to receive the newsletter
+              </label>
+            </div>
+            <button type="submit" class="sub_button">SEND</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>
